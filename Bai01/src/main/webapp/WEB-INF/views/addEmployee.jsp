@@ -10,7 +10,8 @@
 <body>
     <div style="display: flex; justify-content: center">
        <h2>ADD NEW EMPLOYEE</h2>
-    </div><form:form action="add" method="get">
+    </div>
+    <form:form action="add" method="get">
     <div style="display: flex; flex-direction: column; row-gap: 20px; align-items: center; margin-top: 20px">
             <div>
                 <label>First Name: </label>
