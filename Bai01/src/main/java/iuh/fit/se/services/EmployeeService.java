@@ -8,5 +8,6 @@ public interface EmployeeService {
     public void save(Employee employee);
     public Employee findById(int id);
     public List<Employee> getAll();
-    public void remove(int id);
+    public void removeById(int id);
+    List<Employee> findByKeyName(String keyName);
 }

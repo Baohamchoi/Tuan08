@@ -14,7 +14,7 @@ public class EmployeeServiceImpl implements EmployeeService {
 
     @Autowired
     public EmployeeServiceImpl(EmployeeRepository employeeRepository) {
-        this.employeeRepository = this.employeeRepository;
+        this.employeeRepository = employeeRepository;
     }
 
     @Override
@@ -33,7 +33,12 @@ public class EmployeeServiceImpl implements EmployeeService {
     }
 
     @Override
-    public void remove(int id) {
+    public void removeById(int id) {
         employeeRepository.deleteById(id);
+    }
+
+    @Override
+    public List<Employee> findByKeyName(String keyName) {
+        return employeeRepository.findByKeyName(keyName);
     }
 }
